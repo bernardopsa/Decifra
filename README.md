@@ -51,9 +51,9 @@ Para evoluir a aplicação para um cenário de produção escalável, os seguint
 ## Imagens
 
 <p align="center">
-  <img src="./assets/1.jpg" width="400">
-  <img src="./assets/2.jpg" width="400">
-  <img src="./assets/3.jpg" width="400">
-  <img src="./assets/4.jpg" width="400">
-  <img src="./assets/5.jpg" width="400">
+  <img src="./assets/1.jpeg" width="400">
+  <img src="./assets/2.jpeg" width="400">
+  <img src="./assets/3.jpeg" width="400">
+  <img src="./assets/4.jpeg" width="400">
+  <img src="./assets/5.jpeg" width="400">
 </p>
