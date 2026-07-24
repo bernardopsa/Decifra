@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: decifra-db
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: decifra_db
+    ports:
+      - "5433:5432"
+
+  ollama:
+    image: ollama/ollama
+    container_name: decifra-ia
+    ports:
+      - "11434:11434"
+    volumes:
+      - ./ollama-data:/root/.ollama
+
+  api:
+    build: 
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: decifra-api
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_started
