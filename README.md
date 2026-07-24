@@ -20,6 +20,14 @@ A plataforma atua como um tradutor inteligente, recebendo a string bruta da tran
 - **Motor de Inteligência Artificial:** Ollama (rodando localmente em container `http://ollama:11434`).
 - **Modelo LLM:** Google Gemma (`gemma:2b`), escolhido por ser leve, rápido e excelente para seguir instruções de formatação.
 
+ ## Funcionalidades
+
+- **Importação de Extratos:** Carregamento simples de arquivos PDF com o histórico de transações para processamento e leitura automática.
+- **Visão Geral Mensal (Dashboard):** Painel inicial com o resumo de gastos do mês, destacando a maior despesa, totais e gráficos de distribuição por categorias (Alimentação, Transporte, Lazer, etc.).
+- **Gestão de Lotes (Meus Extratos):** Área dedicada para salvar, visualizar, renomear e excluir os diferentes lotes de extratos já importados.
+- **Edição e Personalização:** Caso seja necessário refinar o trabalho da IA, o usuário pode editar transações individualmente, alterando o "Nome Amigável", a "Categoria", adicionando "Descrições" e até classificando o "Comportamento de Gasto" (Obrigatória, Satisfatória ou Compulsiva).
+- **Analytics Comparativo:** Uma aba aprofundada para acompanhar a evolução da saúde financeira, trazendo informações sobre fluxo de caixa diário (Entradas vs. Saídas) e top despesas em gráficos dinâmicos.
+
 ## 🧠 Como funciona a Inteligência Artificial (Engenharia de Prompt)
 
 O coração do Decifra reside na classe `AiService.java`, onde a comunicação com o modelo local é configurada com técnicas avançadas de Prompt Engineering para garantir que a IA não "alucine" e sempre retorne dados consistentes:
@@ -39,3 +47,13 @@ Para evoluir a aplicação para um cenário de produção escalável, os seguint
 - **Testes Unitários:** Criação de testes com *Mock* da API do Ollama para garantir que a extração dos JSONs ocorra corretamente independente de a IA estar rodando.
 - **Autenticação e Segurança:** Implementação de um sistema de login robusto para gestão de múltiplos usuários e controle granular de acesso a documentos sensíveis.
 - **Persistência de Dados (Database & Storage):** Integração completa com o **Supabase** para o armazenamento seguro dos arquivos físicos (PDFs), banco de dados relacional e persistência de embeddings vetoriais.
+
+## Imagens
+
+<p align="center">
+  <img src="./assets/1.jpg" width="400">
+  <img src="./assets/2.jpg" width="400">
+  <img src="./assets/3.jpg" width="400">
+  <img src="./assets/4.jpg" width="400">
+  <img src="./assets/5.jpg" width="400">
+</p>
