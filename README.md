@@ -17,8 +17,8 @@ A plataforma atua como um tradutor inteligente, recebendo a string bruta da tran
 
 - **Linguagem:** Java
 - **Framework:** Spring Boot
-- **Motor de Inteligência Artificial:** Ollama (rodando localmente em container `http://ollama:11434`).
-- **Modelo LLM:** Google Gemma (`gemma:2b`), escolhido por ser leve, rápido e excelente para seguir instruções de formatação.
+- **Motor de Inteligência Artificial:** Ollama (rodando localmente em container Docker).
+- **Modelo LLM:** Google Gemma (`gemma:2b`), escolhido por ser leve, rápido e bom para seguir instruções de formatação.
 
  ## Funcionalidades
 
