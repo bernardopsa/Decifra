@@ -1,6 +1,6 @@
 # 📄 Decifra | Plataforma Inteligente que Descomplica Extratos Financeiros
 
-> Sistema full-stack focado na automação, gestão e análise de extratos financeiros (Ollama).
+> Plataforma web que utiliza Inteligência Artificial local (Ollama) para traduzir, limpar e categorizar descrições confusas de faturas de cartão de crédito, oferecendo gestão e controle financeiro completo.
 
 [![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](#)
 [![Spring Boot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot)](#)
